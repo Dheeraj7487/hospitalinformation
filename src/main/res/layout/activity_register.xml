@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/register_image"
+            android:layout_width="150dp"
+            android:src="@drawable/hospital"
+            android:layout_height="150dp"
+            android:paddingBottom="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+
+        <EditText
+            android:id="@+id/register_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:padding="9dp" />
+
+
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Email"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:padding="9dp" />
+
+
+        <EditText
+            android:id="@+id/register_mobilenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawablePadding="7dp"
+            android:hint="Mobile Number"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="phone"
+            android:padding="9dp" />
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Password"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:padding="9dp" />
+
+        <EditText
+            android:id="@+id/register_ConfirmPaaword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawablePadding="7dp"
+            android:hint="Confirm Paaword"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:padding="9dp" />
+
+
+        <Button
+            android:id="@+id/register_btn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:padding="9dp"
+            android:text="Signup" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/login_textview"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:text="Already have an account? Login"/>
+
+
+    </LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hospitalinformationsystem">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HospitalInformationSystem">
+        <activity android:name=".AreaSelect"></activity>
+        <activity android:name=".requestAcceptReject" />
+        <activity android:name=".feedback_display" />
+        <activity android:name=".admin_hospital_form" />
+        <activity android:name=".Request_Result" />
+        <activity android:name=".Case_Transfer" />
+        <activity android:name=".BedRequest" />
+        <activity android:name=".Hospital_Info" />
+        <activity android:name=".Feedback" />
+        <activity android:name=".ContactUs" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Home" />
+        <activity android:name=".Register" />
+        <activity android:name=".Login" />
+        <activity android:name=".admin_home" />
+        <activity android:name=".admin_SignUp" />
+        <activity android:name=".admin_Login" />
+        <activity android:name=".StartActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

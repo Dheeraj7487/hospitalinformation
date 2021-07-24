@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg2"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".BedRequest">
+
+        <EditText
+            android:id="@+id/pname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Patient Name"
+            android:textColorHint="@color/textHintColor"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:padding="9dp" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Age"
+            android:textColorHint="@color/textHintColor"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:padding="9dp" />
+
+        <EditText
+            android:id="@+id/bgrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Blood Group"
+            android:textColorHint="@color/textHintColor"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:padding="9dp" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Where Is Patient Now ?" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_location">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginEnd="20dp"
+                android:text="At Home" />
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="In Ambulance"
+                />
+            </LinearLayout>
+        </RadioGroup>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Whether Covid Positive or Not ? " />
+        <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/covid">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="COVID Positive"
+                    android:layout_marginEnd="20dp"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="COVID Negative"
+                    />
+            </LinearLayout>
+            </RadioGroup>
+
+
+        <EditText
+            android:id="@+id/other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Other Diseases please specify"
+            android:textColorHint="@color/textHintColor"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:padding="9dp" />
+
+        <EditText
+            android:id="@+id/symptom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Symptom"
+            android:textColorHint="@color/textHintColor"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:padding="9dp" />
+
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Whether Oxygen Required or Not ? " />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/oxygen">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Yes"
+                    android:layout_marginEnd="20dp"/>
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="No"
+                    />
+                </LinearLayout>
+            </RadioGroup>
+
+        <EditText
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawablePadding="7dp"
+            android:hint="Mobile Number"
+            android:textColorHint="@color/textHintColor"
+            android:textColor="@color/black"
+            android:inputType="phone"
+            android:padding="9dp" />
+
+
+        <Button
+            android:id="@+id/req_btn"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:padding="9dp"
+            android:background="@drawable/button"
+            android:text="REQUEST" />
+
+
+    </LinearLayout>
+</ScrollView>

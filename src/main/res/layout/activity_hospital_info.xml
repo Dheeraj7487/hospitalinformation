@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Hospital_Info"
+    android:background="@drawable/bg2">
+
+    <TextView
+        android:id="@+id/selectarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Area Selected : "
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List of Hospital Available "
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hoslist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:itemCount="2"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/hospital_list" />
+
+</LinearLayout>

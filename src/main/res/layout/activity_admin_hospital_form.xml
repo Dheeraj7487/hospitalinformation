@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_hospital_form"
+    android:orientation="vertical"
+    android:background="@drawable/bg2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="Add Hospital Info"/>
+
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/logoselect"
+                    android:padding="9dp"
+                    />
+
+
+
+                <EditText
+                    android:id="@+id/addAreaName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Area Name"
+                    android:textColorHint="@color/textHintColor"
+                    android:textColor="@color/black"
+                    android:padding="9dp" />
+                <EditText
+                    android:id="@+id/addNumOfBed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Enter the Number of Bed"
+                    android:textColorHint="@color/textHintColor"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:padding="9dp" />
+
+                <EditText
+                    android:id="@+id/addNumOfOxygen"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Enter the Number of Oxygen"
+                    android:textColorHint="@color/textHintColor"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:padding="9dp" />
+
+                <EditText
+                    android:id="@+id/addNumOfAmbulance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Enter the Number of Ambulance"
+                    android:textColorHint="@color/textHintColor"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:padding="9dp" />
+
+                <EditText
+                    android:id="@+id/addNumOfDoctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Enter the Number of Available Doctor "
+                    android:textColorHint="@color/textHintColor"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:padding="9dp" />
+
+                <EditText
+                    android:id="@+id/addNumOfNurse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Enter the Number of Available Nurse "
+                    android:textColorHint="@color/textHintColor"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:padding="9dp" />
+
+
+                <LinearLayout
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                        <Button
+                            android:text="Add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button"
+                            android:id="@+id/AddHospitalData"/>
+
+
+                        <Button
+                            android:text="UPDATE"
+                            android:background="@drawable/button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/UpdateHospitalData"
+                            android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

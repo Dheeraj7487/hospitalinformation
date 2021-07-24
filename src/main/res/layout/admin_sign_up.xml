@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_SignUp"
+    android:padding="15dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg1">
+
+    <ImageView
+        android:id="@+id/register_image"
+        android:layout_width="150dp"
+        android:src="@drawable/person"
+        android:layout_height="150dp"
+        android:paddingBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+
+
+    <EditText
+        android:id="@+id/AdminName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/black"
+        android:textColorHighlight="@color/black"
+
+        android:padding="5dp"
+        android:hint="Admin Name"
+        android:layout_marginTop="10dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/HospitalName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:textColorHint="@color/black"
+        android:textColorHighlight="@color/black"
+
+        android:focusableInTouchMode="true"
+        android:padding="5dp"
+        android:hint="Hospital Name"
+        android:layout_marginTop="25dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/AdminEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="5dp"
+        android:hint="Admin Email"
+        android:textColorHint="@color/black"
+        android:textColorHighlight="@color/black"
+        android:layout_marginTop="10dp"
+        android:inputType="text" />
+
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/black"
+        android:textColorHighlight="@color/black"
+        android:padding="5dp"
+        android:hint="Password"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/ConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="5dp"
+        android:textColorHint="@color/black"
+        android:textColorHighlight="@color/black"
+        android:hint="Confirm Password"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword" />
+    <Button
+        android:text="SIGN UP"
+        android:id="@+id/btnSignup"
+        android:background="@drawable/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_textview"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:text="Already have an account? Login"/>
+</LinearLayout>

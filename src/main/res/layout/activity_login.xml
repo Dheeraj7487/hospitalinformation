@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+    android:gravity="center"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/register_image"
+        android:layout_width="150dp"
+        android:src="@drawable/hospital"
+        android:layout_height="150dp"
+        android:paddingBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_email"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="text"
+        android:hint="Email"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_password"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_marginTop="16dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="remember me"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:id="@+id/checkbox"/>
+
+    <Button
+        android:id="@+id/login_btn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:padding="9dp"
+        android:text="Login"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_textview"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="10dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Create a New Account"/>
+
+</LinearLayout>
