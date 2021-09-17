@@ -13,5 +13,4 @@ on user side.
     Case Transfer
     Showing Status (Accept/Reject/Pending)
    
-    
-    
+![Uploading acceptreject.jpg…]()
