@@ -13,4 +13,4 @@ on user side.
     Case Transfer
     Showing Status (Accept/Reject/Pending)
    
-![Uploading acceptreject.jpg…]()
+https://github.com/Dheeraj7487/hospitalinformation/issues/2#issue-999204444
